@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+   	  <meta charset="UTF-8">
+   	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   	  
+   	  <link rel="stylesheet" href="css/style.css">
+   	  <title>Стилизация и отправка формы</title>
+   </head>
+   <body>
+   	  <div class="wrapper">
+   	  	<div class="form">
+   	  		<form action="#" id="form" class="form_body">
+   	  			<h1 class="form_title">Отправка данных</h1>
+   	  			
+   	  			<div class="form_item">  <!--Окно получения имени-->
+   	  				<label for="formName" class="form_label">Имя*:</label>
+   	  				<input id="formName" type="text" name="name" class="form_input _req">
+   	  			</div>
+
+   	  			<div class="form_item">  <!--Окно получения номера-->
+   	  				<label for="formEmail" class="form_label">Телефон*:</label>
+   	  				<input id="formEmail" type="text" name="email" class="form_input _req _email">
+   	  			</div>
+
+   	  			<div class="form_item">  <!--Окно сообщения-->
+   	  				<label for="formMessage" class="form_label">Сообщение:</label>
+   	  				<textarea id="formMessage" name="message" class="form_input"></textarea>
+   	  			</div>
+
+   	  			<div class="form_item">  <!--Прикрепление фото-->
+   	  				<div class="form_label">Прикрепить файл</div>
+   	  				<div class="file">
+   	  					<div class="file_item">
+   	  						<input id="formImage" accept=".jpg, .png, .gif" type="file" name="image" class="file_input">
+   	  						<div class="file_button">Выбрать</div>
+   	  					</div>
+   	  					<div id ="formPreview" class="file_preview"></div>  <!--Превью фото-->
+   	  				</div>
+   	  			</div>
+
+   	  			<div class="form_item">  <!--Согласие с обработкой данных-->
+   	  				<div class="checkbox">
+   	  				    <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox_input _req">
+   	  				    <label for="formAgreement" class="checkbox_label"><span>Я даю свое сагласие на обработку персональных данных в соответствии с <a href=""> условиями </a>*</span></label>
+   	  				</div>
+   	  			</div>
+
+   	  			<button type="submit" class="form_button">Отправить</button>
+
+   	  		</form>
+   	  	</div>
+   	  </div>
+   	  <script src="js/script.js"></script>
+   	</body>
+</html>
