@@ -12,7 +12,7 @@
 
    //от кого письмо
    $mail->setFrom('starlaps8@gmail.com', 'Новая заявка');
-   $mail->addAddress('anuargarkavets@gmail.com');
+   $mail->addAddress('garkavetsanuar@gmail.com');
    $mail->Subject = 'Новый отклик с сайта';
 
    //тело письма
