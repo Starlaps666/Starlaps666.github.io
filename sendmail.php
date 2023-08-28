@@ -11,7 +11,7 @@
    $mail ->IsHTML(true);
 
    //от кого письмо
-   $mail->setFrom('starlaps8@gmail.com', 'Новая заявка');
+   $mail->setFrom('143352540+Starlaps666@users.noreply.github.com', 'Новая заявка');
    $mail->addAddress('garkavetsanuar@gmail.com');
    $mail->Subject = 'Новый отклик с сайта';
 
